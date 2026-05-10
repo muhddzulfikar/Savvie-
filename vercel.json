@@ -1,0 +1,13 @@
+{
+  "buildCommand": "DISABLE_ESLINT_PLUGIN=true CI=false npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
+  "framework": "create-react-app",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "env": {
+    "CI": "false",
+    "DISABLE_ESLINT_PLUGIN": "true",
+    "SKIP_PREFLIGHT_CHECK": "true",
+    "GENERATE_SOURCEMAP": "false"
+  }
+}
